@@ -13,7 +13,7 @@ source:
     - 0002-Fix-CUDA-Kernel-Issue.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   missing_dso_whitelist:
     - "*/nvcuda.dll"   # [win]
