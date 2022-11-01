@@ -1,22 +1,24 @@
-From 997a58bc4e5b034a1eb8687f4bc31940f928245f Mon Sep 17 00:00:00 2001
+From 5e7c77e85e009019f16b8bd33d3a956bfd9a8215 Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Tue, 1 Nov 2022 09:47:20 -0400
-Subject: [PATCH] CUDA Win ARCH select
+Date: Tue, 1 Nov 2022 12:32:33 -0400
+Subject: [PATCH] Fix CUDA Arch issue
 
 ---
- CMakeLists.txt       | 69 +++++++++++++++++++++++++++++---------------
- tests/CMakeLists.txt | 21 +++++++++++---
- 2 files changed, 62 insertions(+), 28 deletions(-)
+ CMakeLists.txt       | 71 +++++++++++++++++++++++++++++---------------
+ tests/CMakeLists.txt | 24 +++++++++++----
+ 2 files changed, 66 insertions(+), 29 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..0c28a25 100644
+index 4a845e1..a8c2c61 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -10,13 +10,26 @@ find_package(CUDA)
+@@ -8,15 +8,28 @@ endif()
+ 
+ find_package(CUDA)
  option(USEGPU "Use GPU" ON)
++set(CUDA_ARCH_LIST "50") # default
  if(CUDA_FOUND AND USEGPU)
  	set(USEGPU ON)
-+	set(CUDA_ARCH_LIST "50;") # default
  	if (CUDA_VERSION_MAJOR STREQUAL "10")
 -		set(CUDA_ARCH_LIST "35;37;50;72;75")
 +		if(WIN32)
@@ -127,15 +129,31 @@ index 4a845e1..0c28a25 100644
  	set(GPU_SOURCE_FILES
  		src/nyx/gpu/gpu_helpers.cu
  		src/nyx/gpu/image_moments.cu
+@@ -212,10 +233,12 @@ if(USEGPU)
+ 	endif()
+ 
+ 	target_link_libraries(backend PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
++	message("Building backend with compute capability for ${CUDA_ARCH_LIST}.")
+ 	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
+ 	target_link_libraries(backend PRIVATE nyxus_gpu)
+ 	if(BUILD_CLI)
+ 		target_link_libraries(nyxus PRIVATE nyxus_gpu)
++		message("Building Nyxus with compute capability for ${CUDA_ARCH_LIST}.")
+ 		target_link_libraries(nyxus PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
+ 		set_target_properties(nyxus PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
+ 	endif()
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
-index 7f0c9c7..0a18943 100755
+index 7f0c9c7..b79ca7c 100755
 --- a/tests/CMakeLists.txt
 +++ b/tests/CMakeLists.txt
-@@ -15,13 +15,26 @@ find_package(CUDA)
+@@ -13,15 +13,28 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+ option(USEGPU "Use GPU" ON)
+ find_package(CUDA)
  
++set(CUDA_ARCH_LIST "50") # default
  if(CUDA_FOUND AND USEGPU)
- 	set(USEGPU ON)
-+	set(CUDA_ARCH_LIST "50") # default
+-	set(USEGPU ON)
++	set(USEGPU ON)	
  	if (CUDA_VERSION_MAJOR STREQUAL "10")
 -		set(CUDA_ARCH_LIST "35;37;50;72;75")
 +		if(WIN32)
@@ -161,7 +179,7 @@ index 7f0c9c7..0a18943 100755
  		endif()
  	endif()
  elseif((NOT CUDA_FOUND) AND USEGPU)
-@@ -111,7 +124,7 @@ if(USEGPU)
+@@ -111,11 +124,12 @@ if(USEGPU)
  	)
  
  	target_sources(runAllTests PRIVATE ${GPU_SOURCE_FILES})
@@ -170,6 +188,11 @@ index 7f0c9c7..0a18943 100755
  	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
  		target_compile_options(runAllTests PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
  	endif()
+ 	target_link_libraries(runAllTests PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
++	message("Building tests with compute capability for ${CUDA_ARCH_LIST}.")
+ 	set_target_properties(runAllTests PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
+ 
+ endif()
 -- 
 2.30.2
 
