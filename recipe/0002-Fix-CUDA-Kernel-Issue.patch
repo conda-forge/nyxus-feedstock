@@ -1,7 +1,7 @@
-From d1804fb3b5345eadd3fa4e7b9a159e0f0bbac02f Mon Sep 17 00:00:00 2001
+From 183c73086b7374403def75c7cf5e373111e02908 Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Tue, 1 Nov 2022 16:05:40 -0400
-Subject: [PATCH] Fix Win CUDA build
+Date: Tue, 1 Nov 2022 16:25:59 -0400
+Subject: [PATCH] Fix Win CUDA Build
 
 ---
  CMakeLists.txt       | 101 +++++++++++++++++++++++++++----------------
@@ -9,7 +9,7 @@ Subject: [PATCH] Fix Win CUDA build
  2 files changed, 92 insertions(+), 52 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..c1c9aa9 100644
+index 4a845e1..a9eb26d 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -5,21 +5,35 @@ project(AxleNyxus)
@@ -18,7 +18,7 @@ index 4a845e1..c1c9aa9 100644
  endif()
 -
 -find_package(CUDA)
-+FindCUDAToolkit()
++find_package(CUDAToolkit)
  option(USEGPU "Use GPU" ON)
 -if(CUDA_FOUND AND USEGPU)
 +
@@ -172,7 +172,7 @@ index 4a845e1..c1c9aa9 100644
  endif()
  
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
-index 7f0c9c7..e04998f 100755
+index 7f0c9c7..9641c19 100755
 --- a/tests/CMakeLists.txt
 +++ b/tests/CMakeLists.txt
 @@ -1,4 +1,4 @@
@@ -185,7 +185,7 @@ index 7f0c9c7..e04998f 100755
  include_directories(${CMAKE_SOURCE_DIR})
  include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
  
-+FindCUDAToolkit()
++find_package(CUDAToolkit)
  option(USEGPU "Use GPU" ON)
 -find_package(CUDA)
  
