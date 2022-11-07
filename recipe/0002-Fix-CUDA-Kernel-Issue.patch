@@ -1,16 +1,15 @@
-From b31ff872b42d4ee4bf3b793c6e1b7fab979bcd3e Mon Sep 17 00:00:00 2001
+From 84055e46c9ebbe4c4304d90aef2d6bb4edd7fad9 Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Mon, 7 Nov 2022 16:51:49 -0500
-Subject: [PATCH] fix CUDA build
+Date: Mon, 7 Nov 2022 17:05:13 -0500
+Subject: [PATCH] Fix CUDA build
 
 ---
- CMakeLists.txt       | 100 ++++++++++++++++++++++++++-----------------
- setup.py             |   1 +
- tests/CMakeLists.txt |   4 +-
- 3 files changed, 65 insertions(+), 40 deletions(-)
+ CMakeLists.txt | 101 ++++++++++++++++++++++++++++++-------------------
+ setup.py       |   1 +
+ 2 files changed, 63 insertions(+), 39 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..9f94570 100644
+index 4a845e1..51ebef7 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -17,6 +17,8 @@ if(CUDA_FOUND AND USEGPU)
@@ -130,7 +129,7 @@ index 4a845e1..9f94570 100644
  
  find_package(Threads QUIET)
  if (Threads_FOUND)
-@@ -200,20 +214,25 @@ else ()
+@@ -200,6 +214,7 @@ else ()
  endif ()
  
  if(USEGPU)
@@ -138,12 +137,7 @@ index 4a845e1..9f94570 100644
  	set(GPU_SOURCE_FILES
  		src/nyx/gpu/gpu_helpers.cu
  		src/nyx/gpu/image_moments.cu
-         src/nyx/gpu/gabor.cu
- 	)
- 	add_library(nyxus_gpu ${GPU_SOURCE_FILES})
-+	set_property(TARGET nyxus_gpu PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS ON)
- 
- 	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+@@ -211,27 +226,33 @@ if(USEGPU)
  		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
  	endif()
  
@@ -151,15 +145,17 @@ index 4a845e1..9f94570 100644
 -	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
 -	target_link_libraries(backend PRIVATE nyxus_gpu)
 +	if(BUILD_LIB)
++		set_property(TARGET backend PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS ON)
 +		target_link_libraries(backend PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
 +		set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
 +		target_link_libraries(backend PRIVATE nyxus_gpu)
 +	endif()
 +
  	if(BUILD_CLI)
++		set_property(TARGET nyxus PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS ON)
  		target_link_libraries(nyxus PRIVATE nyxus_gpu)
  		target_link_libraries(nyxus PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
-@@ -221,17 +240,18 @@ if(USEGPU)
+ 		set_target_properties(nyxus PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
  	endif()
  endif()
  
@@ -186,7 +182,7 @@ index 4a845e1..9f94570 100644
  	if(BUILD_CLI)
  		target_link_libraries(nyxus PRIVATE -static-libgcc -static-libstdc++)
  		target_link_libraries(nyxus PRIVATE stdc++fs)
-@@ -240,9 +260,11 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+@@ -240,9 +261,11 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
  	endif()
  endif()
  
@@ -212,28 +208,6 @@ index 623a7b2..4cb904b 100644
          ]
  
          cfg = "Debug" if self.debug else "Release"
-diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
-index 7f0c9c7..e7ce3eb 100755
---- a/tests/CMakeLists.txt
-+++ b/tests/CMakeLists.txt
-@@ -22,6 +22,8 @@ if(CUDA_FOUND AND USEGPU)
- 			set(CUDA_ARCH_LIST "35;37;50;72;75")
- 		elseif (CUDA_VERSION_MINOR STREQUAL "1" OR CUDA_VERSION_MINOR STREQUAL "2")
- 			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
-+		else () # for now, we assume CUDA 11.2+ supports all these archs.
-+			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
- 		endif()
- 	endif()
- elseif((NOT CUDA_FOUND) AND USEGPU)
-@@ -111,7 +113,7 @@ if(USEGPU)
- 	)
- 
- 	target_sources(runAllTests PRIVATE ${GPU_SOURCE_FILES})
--	
-+	include_directories("${CUDA_INCLUDE_DIRS}")
- 	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
- 		target_compile_options(runAllTests PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
- 	endif()
 -- 
 2.30.2
 
