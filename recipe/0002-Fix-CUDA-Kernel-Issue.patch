@@ -1,18 +1,18 @@
-From 183c73086b7374403def75c7cf5e373111e02908 Mon Sep 17 00:00:00 2001
+From 370b6f6d3e15e811c51842c0d675057cb2aed5be Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Tue, 1 Nov 2022 16:25:59 -0400
-Subject: [PATCH] Fix Win CUDA Build
+Date: Mon, 7 Nov 2022 16:00:19 -0500
+Subject: [PATCH] fix CUDA build
 
 ---
- CMakeLists.txt       | 101 +++++++++++++++++++++++++++----------------
- tests/CMakeLists.txt |  43 ++++++++++++------
- 2 files changed, 92 insertions(+), 52 deletions(-)
+ CMakeLists.txt       | 88 ++++++++++++++++++++++++++------------------
+ tests/CMakeLists.txt | 29 +++++++++------
+ 2 files changed, 70 insertions(+), 47 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..a9eb26d 100644
+index 4a845e1..e0a72cf 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -5,21 +5,35 @@ project(AxleNyxus)
+@@ -5,21 +5,26 @@ project(AxleNyxus)
  if(DEFINED ENV{NYXUS_DEP_DIR})
  	set(CMAKE_PREFIX_PATH $ENV{NYXUS_DEP_DIR})
  endif()
@@ -25,31 +25,20 @@ index 4a845e1..a9eb26d 100644
 +if(CUDAToolkit_FOUND AND USEGPU)
  	set(USEGPU ON)
 -	if (CUDA_VERSION_MAJOR STREQUAL "10")
--		set(CUDA_ARCH_LIST "35;37;50;72;75")
++	set(CMAKE_CUDA_RUNTIME_LIBRARY STATIC)
++	if (CUDAToolkit_VERSION_MAJOR STREQUAL "10")
+ 		set(CUDA_ARCH_LIST "35;37;50;72;75")
 -	elseif (CUDA_VERSION_MAJOR STREQUAL "11")
 -		if(CUDA_VERSION_MINOR STREQUAL "0")
-+	if (CUDAToolkit_VERSION_MAJOR STREQUAL "10")
-+		if(WIN32)
-+			set(CUDA_ARCH_LIST "35;37;50;72")
-+		else()
- 			set(CUDA_ARCH_LIST "35;37;50;72;75")
--		elseif (CUDA_VERSION_MINOR STREQUAL "1" OR CUDA_VERSION_MINOR STREQUAL "2")
--			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
- 		endif()
 +	elseif (CUDAToolkit_VERSION_MAJOR STREQUAL "11")
 +		if(CUDAToolkit_VERSION_MINOR STREQUAL "0")
-+			if(WIN32)
-+				set(CUDA_ARCH_LIST "35;37;50;72")
-+			else()
-+				set(CUDA_ARCH_LIST "35;37;50;72;75")
-+			endif()
+ 			set(CUDA_ARCH_LIST "35;37;50;72;75")
+-		elseif (CUDA_VERSION_MINOR STREQUAL "1" OR CUDA_VERSION_MINOR STREQUAL "2")
 +		elseif (CUDAToolkit_VERSION_MINOR STREQUAL "1" OR CUDAToolkit_VERSION_MINOR STREQUAL "2")
-+			if(WIN32)
-+				set(CUDA_ARCH_LIST "35;37;50;72;75;80")
-+			else()
-+				set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
-+			endif()
-+		endif()
++			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
++		else() # for CUDA 11.2+
+ 			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
+ 		endif()
 +	else()
 +		set(CUDA_ARCH_LIST "50") # default
  	endif()
@@ -58,7 +47,7 @@ index 4a845e1..a9eb26d 100644
  	message(WARNING "CUDA not found. USEGPU flag will be ignored.")
  	set(USEGPU OFF)
  else()
-@@ -33,20 +47,25 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+@@ -33,20 +38,25 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
  
  if(USEGPU)
      enable_language("CUDA")
@@ -86,7 +75,7 @@ index 4a845e1..a9eb26d 100644
  		message(WARNING "OMEZarr support is not available with GCC 7.5 and older compiler.")
  	endif()
  else()
-@@ -165,30 +184,32 @@ if (TIFF_FOUND)
+@@ -165,30 +175,32 @@ if (TIFF_FOUND)
  endif (TIFF_FOUND)
  
  #== Required for OMEZarr 
@@ -140,7 +129,7 @@ index 4a845e1..a9eb26d 100644
  find_package(Threads QUIET)
  if (Threads_FOUND)
      if (CMAKE_USE_PTHREADS_INIT)
-@@ -200,6 +221,7 @@ else ()
+@@ -200,6 +212,7 @@ else ()
  endif ()
  
  if(USEGPU)
@@ -148,7 +137,7 @@ index 4a845e1..a9eb26d 100644
  	set(GPU_SOURCE_FILES
  		src/nyx/gpu/gpu_helpers.cu
  		src/nyx/gpu/image_moments.cu
-@@ -210,14 +232,17 @@ if(USEGPU)
+@@ -210,14 +223,17 @@ if(USEGPU)
  	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
  		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
  	endif()
@@ -156,7 +145,7 @@ index 4a845e1..a9eb26d 100644
 -	target_link_libraries(backend PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
 -	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
 +	target_link_directories (backend PRIVATE ${CUDAToolkit_LIBRARY_DIR})
-+	target_link_libraries(backend PRIVATE CUDA::cudart CUDA::cufft)
++	target_link_libraries(backend PRIVATE CUDA::cufft)
 +	message("Building backend with compute capability for ${CUDA_ARCH_LIST}.")
 +	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES "${CUDA_ARCH_LIST}")
  	target_link_libraries(backend PRIVATE nyxus_gpu)
@@ -166,13 +155,13 @@ index 4a845e1..a9eb26d 100644
 -		set_target_properties(nyxus PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
 +		message("Building Nyxus with compute capability for ${CUDA_ARCH_LIST}.")
 +		target_link_directories (nyxus PRIVATE ${CUDAToolkit_LIBRARY_DIR})
-+		target_link_libraries(nyxus PRIVATE CUDA::cudart CUDA::cufft)
++		target_link_libraries(nyxus PRIVATE CUDA::cufft)
 +		set_target_properties(nyxus PROPERTIES CUDA_ARCHITECTURES "${CUDA_ARCH_LIST}")
  	endif()
  endif()
  
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
-index 7f0c9c7..9641c19 100755
+index 7f0c9c7..336cc69 100755
 --- a/tests/CMakeLists.txt
 +++ b/tests/CMakeLists.txt
 @@ -1,4 +1,4 @@
@@ -181,7 +170,7 @@ index 7f0c9c7..9641c19 100755
  
  set (CMAKE_CXX_STANDARD 17)
  
-@@ -10,28 +10,41 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
+@@ -10,21 +10,26 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
  include_directories(${CMAKE_SOURCE_DIR})
  include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
  
@@ -193,31 +182,20 @@ index 7f0c9c7..9641c19 100755
 +if(CUDAToolkit_FOUND AND USEGPU)
  	set(USEGPU ON)
 -	if (CUDA_VERSION_MAJOR STREQUAL "10")
--		set(CUDA_ARCH_LIST "35;37;50;72;75")
++	set(CMAKE_CUDA_RUNTIME_LIBRARY STATIC)
++	if (CUDAToolkit_VERSION_MAJOR STREQUAL "10")
+ 		set(CUDA_ARCH_LIST "35;37;50;72;75")
 -	elseif (CUDA_VERSION_MAJOR STREQUAL "11")
 -		if(CUDA_VERSION_MINOR STREQUAL "0")
-+	if (CUDAToolkit_VERSION_MAJOR STREQUAL "10")
-+		if(WIN32)
-+			set(CUDA_ARCH_LIST "35;37;50;72")
-+		else()
- 			set(CUDA_ARCH_LIST "35;37;50;72;75")
--		elseif (CUDA_VERSION_MINOR STREQUAL "1" OR CUDA_VERSION_MINOR STREQUAL "2")
--			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
- 		endif()
 +	elseif (CUDAToolkit_VERSION_MAJOR STREQUAL "11")
 +		if(CUDAToolkit_VERSION_MINOR STREQUAL "0")
-+			if(WIN32)
-+				set(CUDA_ARCH_LIST "35;37;50;72")
-+			else()
-+				set(CUDA_ARCH_LIST "35;37;50;72;75")
-+			endif()
+ 			set(CUDA_ARCH_LIST "35;37;50;72;75")
+-		elseif (CUDA_VERSION_MINOR STREQUAL "1" OR CUDA_VERSION_MINOR STREQUAL "2")
 +		elseif (CUDAToolkit_VERSION_MINOR STREQUAL "1" OR CUDAToolkit_VERSION_MINOR STREQUAL "2")
-+			if(WIN32)
-+				set(CUDA_ARCH_LIST "35;37;50;72;75;80")
-+			else()
-+				set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
-+			endif()
-+		endif()
++			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
++		else() # for CUDA 11.2+
+ 			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
+ 		endif()
 +	else()
 +		set(CUDA_ARCH_LIST "50") # default
  	endif()
@@ -226,14 +204,7 @@ index 7f0c9c7..9641c19 100755
  	message(WARNING "CUDA not found. USEGPU flag will be ignored.")
  	set(USEGPU OFF)
  else()
- 	set(USEGPU OFF) # probably redundant fail-safe
- endif()
- 
--
- set(TEST_SRC
- 	test_all.cc
- 	test_pixel_intensity_features.h
-@@ -111,12 +124,14 @@ if(USEGPU)
+@@ -111,12 +116,14 @@ if(USEGPU)
  	)
  
  	target_sources(runAllTests PRIVATE ${GPU_SOURCE_FILES})
@@ -245,7 +216,7 @@ index 7f0c9c7..9641c19 100755
 -	target_link_libraries(runAllTests PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
 -	set_target_properties(runAllTests PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
 +	target_link_directories (runAllTests PRIVATE ${CUDAToolkit_LIBRARY_DIR})
-+	target_link_libraries(runAllTests PRIVATE CUDA::cudart CUDA::cufft)
++	target_link_libraries(runAllTests PRIVATE CUDA::cufft)
 +	message("Building tests with compute capability for ${CUDA_ARCH_LIST}.")
 +	set_target_properties(runAllTests PROPERTIES CUDA_ARCHITECTURES "${CUDA_ARCH_LIST}")
  
