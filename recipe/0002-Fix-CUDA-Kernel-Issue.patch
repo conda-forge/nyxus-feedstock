@@ -1,15 +1,15 @@
-From 1853ed5213426e94096c669b932a70c2223614a6 Mon Sep 17 00:00:00 2001
+From afa4d41e5e4a4c6a770cfd0c5f576a8c39f0134e Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Thu, 20 Oct 2022 13:53:42 -0400
-Subject: [PATCH] Fix CMake Issues
+Date: Mon, 7 Nov 2022 17:30:52 -0500
+Subject: [PATCH] fix cuda
 
 ---
- CMakeLists.txt       | 50 +++++++++++++++++++++++++-------------------
+ CMakeLists.txt       | 51 ++++++++++++++++++++++++++------------------
  tests/CMakeLists.txt |  2 +-
- 2 files changed, 30 insertions(+), 22 deletions(-)
+ 2 files changed, 31 insertions(+), 22 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..b9935de 100644
+index 4a845e1..52d53c2 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -33,6 +33,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -97,6 +97,14 @@ index 4a845e1..b9935de 100644
  	set(GPU_SOURCE_FILES
  		src/nyx/gpu/gpu_helpers.cu
  		src/nyx/gpu/image_moments.cu
+@@ -211,6 +219,7 @@ if(USEGPU)
+ 		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
+ 	endif()
+ 
++	set_property(TARGET backend PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS ON)
+ 	target_link_libraries(backend PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
+ 	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
+ 	target_link_libraries(backend PRIVATE nyxus_gpu)
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
 index 7f0c9c7..a85db5f 100755
 --- a/tests/CMakeLists.txt
