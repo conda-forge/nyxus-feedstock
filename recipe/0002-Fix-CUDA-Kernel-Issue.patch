@@ -1,15 +1,15 @@
-From 8011ee1e7d6fba380d623ad91876466d9c85dd34 Mon Sep 17 00:00:00 2001
+From 410eac1a79cb470092a9279381d02f402eee72fa Mon Sep 17 00:00:00 2001
 From: sameeul <sameeul@gmail.com>
-Date: Mon, 7 Nov 2022 19:19:53 -0500
+Date: Tue, 8 Nov 2022 08:42:46 -0500
 Subject: [PATCH] fix cuda
 
 ---
- CMakeLists.txt       | 58 ++++++++++++++++++++++++--------------------
+ CMakeLists.txt       | 51 ++++++++++++++++++++++++++------------------
  tests/CMakeLists.txt |  2 +-
- 2 files changed, 33 insertions(+), 27 deletions(-)
+ 2 files changed, 31 insertions(+), 22 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4a845e1..2c9ac18 100644
+index 4a845e1..e5462c0 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -33,6 +33,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -89,7 +89,7 @@ index 4a845e1..2c9ac18 100644
  find_package(Threads QUIET)
  if (Threads_FOUND)
      if (CMAKE_USE_PTHREADS_INIT)
-@@ -200,22 +207,21 @@ else ()
+@@ -200,6 +207,7 @@ else ()
  endif ()
  
  if(USEGPU)
@@ -97,25 +97,14 @@ index 4a845e1..2c9ac18 100644
  	set(GPU_SOURCE_FILES
  		src/nyx/gpu/gpu_helpers.cu
  		src/nyx/gpu/image_moments.cu
-         src/nyx/gpu/gabor.cu
- 	)
--	add_library(nyxus_gpu ${GPU_SOURCE_FILES})
--
-+	target_sources(backend PRIVATE ${GPU_SOURCE_FILES})
-+	include_directories("${CUDA_INCLUDE_DIRS}")
+@@ -210,6 +218,7 @@ if(USEGPU)
  	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
--		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
-+		target_compile_options(backend PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
+ 		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
  	endif()
++	set_property(TARGET nyxus_gpu PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS ON)
  
  	target_link_libraries(backend PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
  	set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
--	target_link_libraries(backend PRIVATE nyxus_gpu)
- 	if(BUILD_CLI)
--		target_link_libraries(nyxus PRIVATE nyxus_gpu)
- 		target_link_libraries(nyxus PRIVATE ${CUDA_LIBRARIES} ${CUDA_CUFFT_LIBRARIES})
- 		set_target_properties(nyxus PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST})
- 	endif()
 diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
 index 7f0c9c7..a85db5f 100755
 --- a/tests/CMakeLists.txt
