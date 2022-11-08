@@ -11,6 +11,7 @@ source:
   patches:
     - 0001-fix-filesystem-issue.patch
     - 0002-Fix-CUDA-Kernel-Issue.patch
+    - 0003-fix-pow.patch
 
 build:
   number: 1

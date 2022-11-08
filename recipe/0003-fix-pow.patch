@@ -1,0 +1,105 @@
+From ef117dc12b85194f9321347a1bedfd6197fed47e Mon Sep 17 00:00:00 2001
+From: sameeul <sameeul@gmail.com>
+Date: Tue, 8 Nov 2022 11:42:44 -0500
+Subject: [PATCH] fix pow
+
+---
+ src/nyx/gpu/image_moments.cu | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+diff --git a/src/nyx/gpu/image_moments.cu b/src/nyx/gpu/image_moments.cu
+index 2f1f201..1616e2b 100644
+--- a/src/nyx/gpu/image_moments.cu
++++ b/src/nyx/gpu/image_moments.cu
+@@ -473,31 +473,31 @@ bool ImageMomentsFeature_calcNormSpatialMoments3(
+     double normCoef;
+     // 00
+     w = 0;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w00 = cm00 / normCoef;
+     // 01
+     w = 1;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w01 = cm01 / normCoef;
+     // 02
+     w = 2;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w02 = cm02 / normCoef;
+     // 03
+     w = 3;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w03 = cm03 / normCoef;
+     // 10
+     w = 1;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w10 = cm10 / normCoef;
+     // 20
+     w = 2;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w20 = cm20 / normCoef;
+     // 30
+     w = 3;
+-    normCoef = pow(cm22, w);
++    normCoef = pow_pos_int(cm22, w);
+     w30 = cm30 / normCoef;
+ 
+     return true;
+@@ -511,15 +511,15 @@ bool ImageMomentsFeature_calcHuInvariants3(
+     h1 = nu20 + nu02;
+ 
+     // Formula: double h2 = pow((NormCentralMom(D, 2, 0) - NormCentralMom(D, 0, 2)), 2) + 4 * (pow(NormCentralMom(D, 1, 1), 2));
+-    h2 = pow((nu20 - nu02), 2) + 4. * pow(nu11, 2);
++    h2 = pow_pos_int((nu20 - nu02), 2) + 4. * pow_pos_int(nu11, 2);
+ 
+     // Formula: double h3 = pow((NormCentralMom(D, 3, 0) - 3 * NormCentralMom(D, 1, 2)), 2) +
+     //    pow((3 * NormCentralMom(D, 2, 1) - NormCentralMom(D, 0, 3)), 2);
+-    h3 = pow((nu30 - 3. * nu12), 2) + pow((3. * nu21 - nu03), 2);
++    h3 = pow_pos_int((nu30 - 3. * nu12), 2) + pow_pos_int((3. * nu21 - nu03), 2);
+ 
+     // Formula: double h4 = pow((NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2)), 2) +
+     //    pow((NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3)), 2);
+-    h4 = pow((nu30 + nu12), 2) + pow((nu21 + nu03), 2);
++    h4 = pow_pos_int((nu30 + nu12), 2) + pow_pos_int((nu21 + nu03), 2);
+ 
+     // Formula: double h5 = (NormCentralMom(D, 3, 0) - 3 * NormCentralMom(D, 1, 2)) *
+     //    (NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2)) *
+@@ -528,23 +528,23 @@ bool ImageMomentsFeature_calcHuInvariants3(
+     //    (pow(3 * (NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2)), 2) - pow(NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3), 2));
+     h5 = (nu30 - 3. * nu12) *
+         (nu30 + nu12) *
+-        (pow(nu30 + nu12, 2) - 3. * pow(nu21 + nu03, 2)) +
++        (pow_pos_int(nu30 + nu12, 2) - 3. * pow_pos_int(nu21 + nu03, 2)) +
+         (3. * nu21 - nu03) * (nu21 + nu03) *
+-        (pow(3. * (nu30 + nu12), 2) - pow(nu21 + nu03, 2));
++        (pow_pos_int(3. * (nu30 + nu12), 2) - pow_pos_int(nu21 + nu03, 2));
+ 
+     // Formula: double h6 = (NormCentralMom(D, 2, 0) - NormCentralMom(D, 0, 2)) * (pow(NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2), 2) -
+     //    pow(NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3), 2)) + (4 * NormCentralMom(D, 1, 1) * (NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2)) *
+     //        NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3));
+-    h6 = (nu20 - nu02) * (pow(nu30 + nu12, 2) -
+-        pow(nu21 + nu03, 2)) + (4. * nu11 * (nu30 + nu12) *
++    h6 = (nu20 - nu02) * (pow_pos_int(nu30 + nu12, 2) -
++        pow_pos_int(nu21 + nu03, 2)) + (4. * nu11 * (nu30 + nu12) *
+             nu21 + nu03);
+ 
+     // Formula: double h7 = (3 * NormCentralMom(D, 2, 1) - NormCentralMom(D, 0, 3)) * (NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2)) * (pow(NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2), 2) -
+     //    3 * pow(NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3), 2)) - (NormCentralMom(D, 3, 0) - 3 * NormCentralMom(D, 1, 2)) * (NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3)) *
+     //    (3 * pow(NormCentralMom(D, 3, 0) + NormCentralMom(D, 1, 2), 2) - pow(NormCentralMom(D, 2, 1) + NormCentralMom(D, 0, 3), 2));
+-    h7 = (3. * nu21 - nu03) * (nu30 + nu12) * (pow(nu30 + nu12, 2) -
+-        3 * pow(nu21 + nu03, 2)) - (nu30 - 3 * nu12) * (nu21 + nu03) *
+-        (3 * pow(nu30 + nu12, 2) - pow(nu21 + nu03, 2));
++    h7 = (3. * nu21 - nu03) * (nu30 + nu12) * (pow_pos_int(nu30 + nu12, 2) -
++        3 * pow_pos_int(nu21 + nu03, 2)) - (nu30 - 3 * nu12) * (nu21 + nu03) *
++        (3 * pow_pos_int(nu30 + nu12, 2) - pow_pos_int(nu21 + nu03, 2));
+ 
+     return true;
+ }
+-- 
+2.30.2
+
