@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e82f349f6ff481e017c3ff2060642e66e81dbda5910272fba1b3c5a4b5d9b2fd
-  patches:
-    - 0001-fix-filesystem-issue.patch
-    - 0002-Fix-CUDA-Kernel-Issue.patch
-    - 0003-fix-pow.patch
+  sha256: 0d5d1db5bc31b4de0ba9d4ad8691ee7c27f8bede3937b35879e03e6ee1e585a0
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   missing_dso_whitelist:
     - "*/nvcuda.dll"   # [win]
@@ -64,6 +60,15 @@ test:
 about:
   home: https://github.com/PolusAI/nyxus
   summary: 'Scalable library for calculating features from intensity-label image data'
+  description: |
+    Nyxus is a feature-rich, highly optimized, Python/C++ application capable of analyzing images 
+    of arbitrary size and assembling complex regions of interest (ROIs) split across multiple image 
+    tiles and files. Nyxus can be used via Python or command line and is available in containerized 
+    form for reproducible execution. Nyxus computes over 450 combined intensity, texture, and 
+    morphological features at the ROI or whole image level with more in development. 
+    Key features that make Nyxus unique among other image feature extraction applications is its 
+    ability to operate at any scale, its highly validated algorithms, 
+    and its modular nature that makes the addition of new features straightforward.
   license: MIT
   license_family: MIT
   license_file: LICENSE
