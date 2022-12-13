@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
   sha256: 099c9bfed65ed98a9037298eb1e24ff2619296b5b19d3db5be01a5ab6f161c1a
+  patches:
+    - 0001-fix-filesystem-issue.patch
 
 build:
   number: 0
