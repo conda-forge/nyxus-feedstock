@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0d5d1db5bc31b4de0ba9d4ad8691ee7c27f8bede3937b35879e03e6ee1e585a0
+  sha256: 099c9bfed65ed98a9037298eb1e24ff2619296b5b19d3db5be01a5ab6f161c1a
+  patches:
+    - 0001-fix-filesystem-issue.patch
 
 build:
   number: 0
