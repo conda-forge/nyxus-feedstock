@@ -69,6 +69,7 @@ about:
     Key features that make Nyxus unique among other image feature extraction applications is its 
     ability to operate at any scale, its highly validated algorithms, 
     and its modular nature that makes the addition of new features straightforward.
+    add vague line
   license: MIT
   license_family: MIT
   license_file: LICENSE
