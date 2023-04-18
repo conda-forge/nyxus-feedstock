@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8ecdbbda24a90e3090eb956f99bcdfd5d95219aada7beefdd59d9a10c6b71b0c
+  sha256: 9ccf632842b168ef25b59392f8ff733834dd12243e92424f13b2539a9979cc29
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
