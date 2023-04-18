@@ -1,3 +1,9 @@
+azure:
+  settings_win:
+    pool:
+      vmImage: windows-2019
+provider:
+  win: azure
 github:
   branch_name: main
   tooling_branch_name: main
