@@ -43,7 +43,6 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - openjpeg
     - m2-patch  # [win]
 
   run:
