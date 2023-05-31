@@ -49,7 +49,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
-   - fmjpeg2koj
+    - fmjpeg2koj
 
 test:
   requires:
