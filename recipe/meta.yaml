@@ -10,7 +10,7 @@ source:
   sha256: 9ccf632842b168ef25b59392f8ff733834dd12243e92424f13b2539a9979cc29
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
