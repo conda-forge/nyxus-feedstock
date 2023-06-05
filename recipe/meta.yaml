@@ -10,7 +10,7 @@ source:
   sha256: 63fe12720f7fed9f8a441944910885abe7b9d5b6d9664720da3315496f7cee8a
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -44,6 +44,7 @@ requirements:
     - dcmtk
     - fmjpeg2koj
     - m2-patch  # [win]
+    - libcufft-dev  # [cuda_compiler_version != "None"] 
 
   run:
     - python
