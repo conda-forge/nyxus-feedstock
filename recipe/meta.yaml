@@ -44,7 +44,7 @@ requirements:
     - dcmtk
     - fmjpeg2koj
     - m2-patch  # [win]
-    - libcufft-dev  # [cuda_compiler_version == "12.0"] 
+    - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
   run:
     - python
