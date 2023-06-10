@@ -27,7 +27,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - git
-    - ninja # [win]    
+    - ninja  # [win]    
 
   host:
     - python
