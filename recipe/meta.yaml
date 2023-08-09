@@ -53,6 +53,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
+    - pyarrow
 
 test:
   requires:
