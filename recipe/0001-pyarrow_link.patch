@@ -1,0 +1,28 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0d604b9..7b1acdc 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -26,7 +26,7 @@ if(CUDA_FOUND AND USEGPU)
+ 			set(CUDA_ARCH_LIST "35;37;50;72;75;80;86")
+ 		endif()
+ 	elseif (CUDA_VERSION_MAJOR STREQUAL "12")
+-		set(CUDA_ARCH_LIST "52;60;72;75;80;86;89;90")
++		set(CUDA_ARCH_LIST "52;60;75;80;86;89;90")
+ 	else() # some old CUDA version (<10)
+ 		set(CUDA_ARCH_LIST "50")
+ 	endif()
+@@ -352,12 +352,12 @@ if(USEARROW)
+ 
+ 		# Print the path
+ 		message(STATUS "PyArrow Include Path: ${PYARROW_INCLUDE_PATH}")
+-		message(STATUS "PyArrow Include Path: ${PYARROW_LIB_PATH}")
++		message(STATUS "PyArrow library Path: ${PYARROW_LIB_PATH}")
+ 
+ 		# add pyarrow include path
+ 		include_directories(${PYARROW_INCLUDE_PATH})
+ 
+-		target_link_libraries(backend PRIVATE ${PYARROW_LIB_PATH} )
++		list(APPEND Nyxus_LIBRARIES ${PYARROW_LIB_PATH} )
+ 
+ 		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
+ 

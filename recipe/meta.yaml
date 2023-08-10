@@ -10,11 +10,13 @@ source:
   sha256: 0b91abab08d3385ae87db588fb6f010d38ac44ff6b07a375b71638c229e2a439
   patches:
     - 0000-win_2022.patch
+    - 0001-pyarrow_link.patch
 build:
   number: 0
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
+    - '*/arrow_python.dll'   # [win]
   ignore_run_exports_from:
   # The CXX standard library is unused on linux, but used on osx
     - {{ compiler('cxx') }}  # [linux]
@@ -54,9 +56,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - pandas
     - pyarrow
-    - arrow-cpp
-    - parquet-cpp
-
+    - libarrow
 
 test:
   requires:
