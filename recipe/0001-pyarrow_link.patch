@@ -26,3 +26,17 @@ index 0d604b9..7b1acdc 100644
  
  		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
  
+diff --git a/src/nyx/python/nyxus/nyxus.py b/src/nyx/python/nyxus/nyxus.py
+index ff26e63..ed59cf8 100644
+--- a/src/nyx/python/nyxus/nyxus.py
++++ b/src/nyx/python/nyxus/nyxus.py
+@@ -28,6 +28,9 @@ import pyarrow as pa
+ from typing import Optional, List
+ 
+ #pa.import_pyarrow()
++if os.sys.platform == "win32":
++    for lib_dir in pa.get_library_dirs():
++        os.add_dll_directory(lib_dir)
+ 
+ class Nyxus:
+     """Nyxus image feature extraction library

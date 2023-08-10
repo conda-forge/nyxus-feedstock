@@ -16,7 +16,6 @@ build:
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
-    - '*/arrow_python.dll'   # [win]
   ignore_run_exports_from:
   # The CXX standard library is unused on linux, but used on osx
     - {{ compiler('cxx') }}  # [linux]
@@ -29,7 +28,9 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - git
-    - ninja  # [win]    
+    - ninja  # [win]  
+    - arrow-cpp  # [build_platform != target_platform]
+    - pyarrow  # [build_platform != target_platform]  
 
   host:
     - python
@@ -48,6 +49,7 @@ requirements:
     - dcmtk
     - fmjpeg2koj
     - pyarrow
+    - arrow-cpp
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
@@ -56,7 +58,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - pandas
     - pyarrow
-    - libarrow
+    - arrow-cpp
 
 test:
   requires:
