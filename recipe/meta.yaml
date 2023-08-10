@@ -54,6 +54,9 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - pandas
     - pyarrow
+    - arrow-cpp
+    - parquet-cpp
+
 
 test:
   requires:
