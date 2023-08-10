@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/sameeul/nyxus/archive/refs/heads/find_python.zip
-  sha256: 0767f9a6e3f2d964dff54d733336d25921e6525f0b2e9f9281aae6c39d9e2a55
+  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 0b91abab08d3385ae87db588fb6f010d38ac44ff6b07a375b71638c229e2a439
   patches:
     - 0000-win_2022.patch
 build:
