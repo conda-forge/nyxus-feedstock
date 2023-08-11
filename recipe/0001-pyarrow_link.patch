@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 0d604b9..7b1acdc 100644
+index 0d604b9..6f9b1ac 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -26,7 +26,7 @@ if(CUDA_FOUND AND USEGPU)
@@ -11,7 +11,7 @@ index 0d604b9..7b1acdc 100644
  	else() # some old CUDA version (<10)
  		set(CUDA_ARCH_LIST "50")
  	endif()
-@@ -352,12 +352,12 @@ if(USEARROW)
+@@ -352,14 +352,14 @@ if(USEARROW)
  
  		# Print the path
  		message(STATUS "PyArrow Include Path: ${PYARROW_INCLUDE_PATH}")
@@ -22,12 +22,38 @@ index 0d604b9..7b1acdc 100644
  		include_directories(${PYARROW_INCLUDE_PATH})
  
 -		target_link_libraries(backend PRIVATE ${PYARROW_LIB_PATH} )
-+		list(APPEND Nyxus_LIBRARIES ${PYARROW_LIB_PATH} )
++		list(APPEND Nyxus_LIBRARIES arrow_python )
  
- 		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
+-		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
++		target_link_libraries(backend PRIVATE ${PYARROW_LIB_PATH})
  
+ 	endif()
+ 
+diff --git a/ci-utils/find_pyarrow.py b/ci-utils/find_pyarrow.py
+index 362e906..7e03cb9 100644
+--- a/ci-utils/find_pyarrow.py
++++ b/ci-utils/find_pyarrow.py
+@@ -3,11 +3,11 @@ import platform
+ path=pa.get_library_dirs()[0]
+ operating_system = platform.system()
+ 
+-if operating_system == 'Linux':
+-    path += '/libarrow_python.so'
+-elif operating_system == 'Darwin':
+-    path += '/libarrow_python.dylib'
+-elif operating_system == 'Windows':
+-    path += '\\arrow_python.lib'
++# if operating_system == 'Linux':
++#     path += '/libarrow_python.so'
++# elif operating_system == 'Darwin':
++#     path += '/libarrow_python.dylib'
++# elif operating_system == 'Windows':
++#     path += '\\arrow_python.lib'
+ 
+ print(path)
+\ No newline at end of file
 diff --git a/src/nyx/python/nyxus/nyxus.py b/src/nyx/python/nyxus/nyxus.py
-index ff26e63..cea5675 100644
+index ff26e63..d929c5f 100644
 --- a/src/nyx/python/nyxus/nyxus.py
 +++ b/src/nyx/python/nyxus/nyxus.py
 @@ -1,3 +1,14 @@
@@ -45,7 +71,7 @@ index ff26e63..cea5675 100644
  from .backend import (
      initialize_environment,
      featurize_directory_imp,
-@@ -21,13 +32,29 @@ from .backend import (
+@@ -21,13 +32,6 @@ from .backend import (
      arrow_is_enabled_imp,
      )
  
@@ -54,29 +80,7 @@ index ff26e63..cea5675 100644
 -import pandas as pd
 -import pyarrow as pa
 -from typing import Optional, List
-+from .backend import (
-+    initialize_environment,
-+    featurize_directory_imp,
-+    featurize_montage_imp,
-+    featurize_fname_lists_imp,
-+    findrelations_imp,
-+    use_gpu,
-+    gpu_available,
-+    blacklist_roi_imp,
-+    clear_roi_blacklist_imp,
-+    roi_blacklist_get_summary_imp,
-+    customize_gabor_feature_imp,
-+    set_if_ibsi_imp,
-+    set_environment_params_imp,
-+    get_params_imp, 
-+    create_arrow_file_imp, 
-+    get_arrow_file_imp, 
-+    get_parquet_file_imp, 
-+    create_parquet_file_imp, 
-+    get_arrow_table_imp,
-+    arrow_is_enabled_imp,
-+    )
- 
+-
 -#pa.import_pyarrow()
  
  class Nyxus:
