@@ -22,7 +22,7 @@ index 0d604b9..285a847 100644
  		include_directories(${PYARROW_INCLUDE_PATH})
  
 -		target_link_libraries(backend PRIVATE ${PYARROW_LIB_PATH} )
-+		list(APPEND Nyxus_LIBRARIES arrow_python )
++		list(APPEND Nyxus_LIBRARIES arrow_python::arrow_python )
  
 -		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
 +		target_link_directories(backend PRIVATE ${PYARROW_LIB_PATH})
