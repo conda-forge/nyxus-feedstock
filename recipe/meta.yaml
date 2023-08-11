@@ -56,7 +56,6 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - pandas
     - pyarrow
-    - arrow-cpp
 
 test:
   requires:
