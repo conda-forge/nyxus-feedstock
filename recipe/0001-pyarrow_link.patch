@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 0d604b9..c554b15 100644
+index 0d604b9..25e5904 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -26,7 +26,7 @@ if(CUDA_FOUND AND USEGPU)
@@ -11,7 +11,7 @@ index 0d604b9..c554b15 100644
  	else() # some old CUDA version (<10)
  		set(CUDA_ARCH_LIST "50")
  	endif()
-@@ -352,14 +352,15 @@ if(USEARROW)
+@@ -352,14 +352,13 @@ if(USEARROW)
  
  		# Print the path
  		message(STATUS "PyArrow Include Path: ${PYARROW_INCLUDE_PATH}")
@@ -20,14 +20,12 @@ index 0d604b9..c554b15 100644
  
  		# add pyarrow include path
  		include_directories(${PYARROW_INCLUDE_PATH})
-+		add_library(arrow_python SHARED IMPORTED)
-+		set_target_properties(arrow_python PROPERTIES IMPORTED_LOCATION ${PYARROW_LIB_PATH})
 +		list(APPEND Nyxus_LIBRARIES arrow_python )
  
 -		target_link_libraries(backend PRIVATE ${PYARROW_LIB_PATH} )
 -
 -		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
-+		#target_link_directories(backend PRIVATE ${PYARROW_LIB_PATH})
++		target_link_directories(backend PRIVATE ${PYARROW_LIB_PATH})
  
  	endif()
  
