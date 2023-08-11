@@ -29,8 +29,6 @@ requirements:
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - git
     - ninja  # [win]  
-    - arrow-cpp  # [build_platform != target_platform]
-    - pyarrow  # [build_platform != target_platform]  
 
   host:
     - python
@@ -64,8 +62,7 @@ test:
   requires:
     - pip
     - pytest
-    - pyarrow
-    - arrow-cpp
+
   imports:
     - nyxus
   commands:
