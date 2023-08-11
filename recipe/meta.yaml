@@ -64,6 +64,8 @@ test:
   requires:
     - pip
     - pytest
+    - pyarrow
+    - arrow-cpp
   imports:
     - nyxus
   commands:
