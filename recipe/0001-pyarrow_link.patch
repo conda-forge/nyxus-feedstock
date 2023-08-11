@@ -27,16 +27,57 @@ index 0d604b9..7b1acdc 100644
  		target_link_libraries(backend PRIVATE ${Python_INCLUDE_DIRS})
  
 diff --git a/src/nyx/python/nyxus/nyxus.py b/src/nyx/python/nyxus/nyxus.py
-index ff26e63..ed59cf8 100644
+index ff26e63..cea5675 100644
 --- a/src/nyx/python/nyxus/nyxus.py
 +++ b/src/nyx/python/nyxus/nyxus.py
-@@ -28,6 +28,9 @@ import pyarrow as pa
- from typing import Optional, List
- 
- #pa.import_pyarrow()
+@@ -1,3 +1,14 @@
++import os
++import numpy as np
++import pandas as pd
++from typing import Optional, List
++
++#pa.import_pyarrow()
++import pyarrow as pa
 +if os.sys.platform == "win32":
 +    for lib_dir in pa.get_library_dirs():
 +        os.add_dll_directory(lib_dir)
++
+ from .backend import (
+     initialize_environment,
+     featurize_directory_imp,
+@@ -21,13 +32,29 @@ from .backend import (
+     arrow_is_enabled_imp,
+     )
+ 
+-import os
+-import numpy as np
+-import pandas as pd
+-import pyarrow as pa
+-from typing import Optional, List
++from .backend import (
++    initialize_environment,
++    featurize_directory_imp,
++    featurize_montage_imp,
++    featurize_fname_lists_imp,
++    findrelations_imp,
++    use_gpu,
++    gpu_available,
++    blacklist_roi_imp,
++    clear_roi_blacklist_imp,
++    roi_blacklist_get_summary_imp,
++    customize_gabor_feature_imp,
++    set_if_ibsi_imp,
++    set_environment_params_imp,
++    get_params_imp, 
++    create_arrow_file_imp, 
++    get_arrow_file_imp, 
++    get_parquet_file_imp, 
++    create_parquet_file_imp, 
++    get_arrow_table_imp,
++    arrow_is_enabled_imp,
++    )
+ 
+-#pa.import_pyarrow()
  
  class Nyxus:
      """Nyxus image feature extraction library
