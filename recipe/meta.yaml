@@ -48,8 +48,8 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - pyarrow
     - arrow-cpp
+    - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
