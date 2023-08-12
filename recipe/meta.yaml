@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,12 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e89c37bfe8c32d060c9eaa36aebf5ccc3d4bff8afee6b26176fe04a279f45748
+  sha256: 0b91abab08d3385ae87db588fb6f010d38ac44ff6b07a375b71638c229e2a439
   patches:
     - 0000-win_2022.patch
+    - 0001-pyarrow_link.patch
 build:
-  number: 4
+  number: 0
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -27,7 +28,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - git
-    - ninja  # [win]    
+    - ninja  # [win]  
 
   host:
     - python
@@ -45,6 +46,8 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
+    - arrow-cpp
+    - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
@@ -52,11 +55,13 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
+    - pyarrow
 
 test:
   requires:
     - pip
     - pytest
+
   imports:
     - nyxus
   commands:
