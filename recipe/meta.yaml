@@ -12,8 +12,10 @@ source:
     - 0000-win_2022.patch
     - 0001-pyarrow_link.patch
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
+  rpaths:
+  - {{ SP_DIR }}/pyarrow
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
   ignore_run_exports_from:
@@ -47,7 +49,6 @@ requirements:
     - dcmtk
     - fmjpeg2koj
     - arrow-cpp
-    - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
