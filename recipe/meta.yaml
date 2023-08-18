@@ -6,11 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0b91abab08d3385ae87db588fb6f010d38ac44ff6b07a375b71638c229e2a439
+  url: https://github.com/JesseMckinzie/nyxus/archive/refs/heads/pyarrow_update_v3.zip
+  sha256: 4b49805fa3b4ee0536af8d7ccfe27bd317bd5e135172867fedfa98601ef355f4
   patches:
     - 0000-win_2022.patch
-    - 0001-pyarrow_link.patch
 build:
   number: 0
   skip: true  # [py<36]
