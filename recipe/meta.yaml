@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/JesseMckinzie/nyxus/archive/refs/heads/pyarrow_update_v3.zip
-  sha256: 4b49805fa3b4ee0536af8d7ccfe27bd317bd5e135172867fedfa98601ef355f4
+  url: https://github.com/JesseMckinzie/nyxus/archive/refs/heads/pyarrow_update.zip
+  sha256: 5891032ad30daa9b40a4b9e558fc44238e5ce4095f590c24af71f2e8fa560788
   patches:
     - 0000-win_2022.patch
 build:
