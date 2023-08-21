@@ -10,7 +10,6 @@ source:
   sha256: 10a1778a779fe188039051b10e8fb88cafb81f6d49d7290e5e8ac1624499d55f
   patches:
     - 0000-win_2022.patch
-    - 0001-pyarrow_link.patch
 build:
   number: 0
   skip: true  # [py<36]
