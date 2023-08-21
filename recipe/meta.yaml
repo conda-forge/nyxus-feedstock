@@ -45,7 +45,7 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - arrow-cpp
+    - arrow-cpp >=10.0.0
     - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
@@ -54,7 +54,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
-    - pyarrow
+    - {{ pin_compatible('pyarrow') }}
 
 test:
   requires:
