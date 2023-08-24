@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 10a1778a779fe188039051b10e8fb88cafb81f6d49d7290e5e8ac1624499d55f
+  sha256: 023723f3f2c11936a28d07e080de0a6c6473978785e923843e2573b97f2fc59e
   patches:
     - 0000-win_2022.patch
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
