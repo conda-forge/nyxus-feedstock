@@ -35,7 +35,7 @@ requirements:
     - pip
     - z5py  # [cuda_compiler_version != "10.2" or not linux] 
     - libtiff
-    - libboost-python-devel
+    - libboost-headers
     - nlohmann_json
     - blosc  # [cuda_compiler_version != "10.2" or not linux]
     - pybind11
@@ -45,7 +45,7 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - arrow-cpp >=10.0.0
+    - libarrow
     - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
