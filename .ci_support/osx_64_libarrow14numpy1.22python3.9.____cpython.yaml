@@ -15,7 +15,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 libarrow:
-- 11.0.0
+- '14'
 libtiff:
 - '4.6'
 macos_machine:
