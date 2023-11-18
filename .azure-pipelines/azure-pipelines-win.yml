@@ -104,6 +104,54 @@ jobs:
       win_64_cuda_compiler_version11.8libarrow14numpy1.23python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_version11.8libarrow14numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.22python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.23python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow11.0.0numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow12numpy1.22python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow12numpy1.23python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow12numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow13numpy1.22python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow13numpy1.23python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow13numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow14numpy1.22python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version12.0libarrow14numpy1.23python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.0libarrow14numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
       win_64_cuda_compiler_versionNonelibarrow11.0.0numpy1.22python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow11.0.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -152,7 +200,7 @@ jobs:
       win_64_cuda_compiler_versionNonelibarrow14numpy1.23python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow14numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 19
+    maxParallel: 22
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
