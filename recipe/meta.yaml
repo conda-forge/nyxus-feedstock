@@ -11,7 +11,7 @@ source:
   patches:
     - 0000-win_2022.patch
 build:
-  number: 6
+  number: 7
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
