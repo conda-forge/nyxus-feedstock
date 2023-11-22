@@ -1,13 +1,13 @@
 {% set name = "nyxus" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 023723f3f2c11936a28d07e080de0a6c6473978785e923843e2573b97f2fc59e
+  url: https://github.com/sameeul/nyxus/archive/refs/heads/rev_pr_170.zip
+  sha256: 737fde79553384634a81ea7b6aa4028d73c071622e51db662839c9c36d357f39
   patches:
     - 0000-win_2022.patch
 build:
@@ -46,7 +46,6 @@ requirements:
     - dcmtk
     - fmjpeg2koj
     - libarrow
-    - pyarrow
     - m2-patch  # [win]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
@@ -54,12 +53,10 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
-    - {{ pin_compatible('pyarrow') }}
 
 test:
   requires:
     - pip
-    - pytest
 
   imports:
     - nyxus
