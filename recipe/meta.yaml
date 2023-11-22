@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/sameeul/nyxus/archive/refs/heads/rev_pr_170.zip
-  sha256: 737fde79553384634a81ea7b6aa4028d73c071622e51db662839c9c36d357f39
+  url: https://github.com/PolusAI/nyxus/archive/refs/heads/main.zip
+  sha256: 412b4c8df2a457f7847f42a1f08bebca06f66721929ff82d0eec36d2133868de
   patches:
     - 0000-win_2022.patch
 build:
