@@ -52,6 +52,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
+    - cudatoolkit  # [cuda_compiler_version != "None"]
     - pandas
 
 test:
