@@ -45,21 +45,19 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - libarrow
-    - pyarrow
+    - libarrow-all
     - m2-patch  # [win]
+    - cuda-cudart-dev # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - pandas
-    - {{ pin_compatible('pyarrow') }}
 
 test:
   requires:
     - pip
-    - pytest
 
   imports:
     - nyxus
