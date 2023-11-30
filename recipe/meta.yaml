@@ -47,7 +47,7 @@ requirements:
     - fmjpeg2koj
     - libarrow-all
     - m2-patch  # [win]
-    - cuda-cudart-dev # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
 
   run:
