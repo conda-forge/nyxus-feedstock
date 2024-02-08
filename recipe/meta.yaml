@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
--  url: https://github.com/sameeul/nyxus/archive/refs/heads/conda_gpu_v3.zip
--  sha256: 2dbd89c9f501410631413ed88fbc91c1ebfdaf4e439a28420501fb9745a70695  patches:
+  url: https://github.com/sameeul/nyxus/archive/refs/heads/conda_gpu_v3.zip
+  sha256: 2dbd89c9f501410631413ed88fbc91c1ebfdaf4e439a28420501fb9745a70695  patches:
     - 0000-win_2022.patch
 build:
   number: 1
