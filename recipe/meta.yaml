@@ -6,12 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f3041bb73ccb6390df5c2cf6d8ac7d4f5d91b75a3f31dd7a0664763d964c5138
-  patches:
+-  url: https://github.com/sameeul/nyxus/archive/refs/heads/conda_gpu_v3.zip
+-  sha256: 2dbd89c9f501410631413ed88fbc91c1ebfdaf4e439a28420501fb9745a70695  patches:
     - 0000-win_2022.patch
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
