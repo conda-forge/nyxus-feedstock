@@ -12,7 +12,7 @@ source:
     - 0000-win_2022.patch
 build:
   number: 1
-  skip: true  # [py<36]
+  skip: true  # [py != 39 or cuda_compiler_version != "12.0"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
   ignore_run_exports_from:
@@ -49,7 +49,7 @@ requirements:
     - m2-patch  # [win]
     - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
-
+    - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
   run:
     - python
     - {{ pin_compatible('numpy') }}
