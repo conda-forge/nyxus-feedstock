@@ -49,7 +49,7 @@ requirements:
     - m2-patch  # [win]
     - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
-    - cuda-version {{ cuda_compiler_version }} # [cuda_compiler_version != "None"]
+    - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
 
   run:
     - python
