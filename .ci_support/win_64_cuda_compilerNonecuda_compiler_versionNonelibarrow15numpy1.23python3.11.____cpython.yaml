@@ -5,13 +5,13 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cuda_compiler:
-- cuda-nvcc
+- None
 cuda_compiler_version:
-- '12.0'
+- None
 cxx_compiler:
 - vs2019
 libarrow:
-- 11.0.0
+- '15'
 libtiff:
 - '4.6'
 numpy:
