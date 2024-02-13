@@ -9,4 +9,9 @@ if [[ "$target_platform" == osx-* ]]; then
 	export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 fi
 
-CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=$PREFIX -DALLEXTRAS=ON" python -m pip install . -vv
+# add -DUSEGPU=ON if nvcc is present
+if command -v nvcc &> /dev/null; then
+    CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=$PREFIX -DALLEXTRAS=ON -DUSEGPU=ON" python -m pip install . -vv
+else
+    CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=$PREFIX -DALLEXTRAS=ON" python -m pip install . -vv
+fi
