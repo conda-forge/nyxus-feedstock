@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f3041bb73ccb6390df5c2cf6d8ac7d4f5d91b75a3f31dd7a0664763d964c5138
+  sha256: 02733f4202d2bb05b081be7e7b8568908138c79f52c5a534e3ee68fbf088a8a6
   patches:
     - 0000-win_2022.patch
 build:
   number: 0
-  skip: true  # [py<36]
+  skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
   ignore_run_exports_from:
@@ -45,10 +45,11 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - libarrow-all
+    - libarrow
     - m2-patch  # [win]
     - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
 
   run:
     - python
