@@ -8,10 +8,9 @@ package:
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
   sha256: 02733f4202d2bb05b081be7e7b8568908138c79f52c5a534e3ee68fbf088a8a6
-  patches:
-    - 0000-win_2022.patch
+
 build:
-  number: 1
+  number: 2
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -33,14 +32,14 @@ requirements:
     - python
     - setuptools
     - pip
-    - z5py  # [cuda_compiler_version != "10.2" or not linux] 
+    - z5py
     - libtiff
     - libboost-headers
     - nlohmann_json
-    - blosc  # [cuda_compiler_version != "10.2" or not linux]
+    - blosc
     - pybind11
-    - xtensor  # [cuda_compiler_version != "10.2" or not linux] 
-    - xsimd  # [cuda_compiler_version != "10.2" or not linux] 
+    - xtensor
+    - xsimd
     - numpy
     - pandas
     - dcmtk
