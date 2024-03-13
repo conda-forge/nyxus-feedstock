@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 02733f4202d2bb05b081be7e7b8568908138c79f52c5a534e3ee68fbf088a8a6
+  sha256: 72dba9c825f222e0b158d81b9f7b232b1cab1609c084fd23aefb9de4806ad462
 
 build:
   number: 2
