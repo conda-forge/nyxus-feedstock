@@ -34,14 +34,14 @@ requirements:
     - python
     - setuptools
     - pip
-    - z5py  # [cuda_compiler_version != "10.2" or not linux] 
+    - z5py
     - libtiff
     - libboost-headers
     - nlohmann_json
-    - blosc  # [cuda_compiler_version != "10.2" or not linux]
+    - blosc
     - pybind11
-    - xtensor  # [cuda_compiler_version != "10.2" or not linux] 
-    - xsimd  # [cuda_compiler_version != "10.2" or not linux] 
+    - xtensor
+    - xsimd
     - numpy
     - pandas
     - dcmtk
@@ -54,7 +54,6 @@ requirements:
 
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - pandas
 
 test:
