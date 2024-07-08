@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.7.5" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 72dba9c825f222e0b158d81b9f7b232b1cab1609c084fd23aefb9de4806ad462
+  sha256: be9c9a6efc3d36c2e14ab51625652bee33b88294dae64830df40ceec4fecfcae
   patches:
     - 0000-win_2022.patch
 build:
-  number: 2
+  number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -34,14 +34,14 @@ requirements:
     - python
     - setuptools
     - pip
-    - z5py  # [cuda_compiler_version != "10.2" or not linux] 
+    - z5py
     - libtiff
     - libboost-headers
     - nlohmann_json
-    - blosc  # [cuda_compiler_version != "10.2" or not linux]
+    - blosc
     - pybind11
-    - xtensor  # [cuda_compiler_version != "10.2" or not linux] 
-    - xsimd  # [cuda_compiler_version != "10.2" or not linux] 
+    - xtensor
+    - xsimd
     - numpy
     - pandas
     - dcmtk
@@ -54,7 +54,6 @@ requirements:
 
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - pandas
 
 test:
