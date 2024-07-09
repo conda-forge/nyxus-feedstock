@@ -11,7 +11,7 @@ fi
 
 # add -DUSEGPU=ON if nvcc is present
 if command -v nvcc &> /dev/null; then
-    CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=$PREFIX -DALLEXTRAS=ON -DUSEGPU=ON" python -m pip install . -vv
+    CMAKE_ARGS="-DALLEXTRAS=ON -DUSEGPU=ON" python -m pip install . -vv
 else
-    CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=$PREFIX -DALLEXTRAS=ON" python -m pip install . -vv
+    CMAKE_ARGS="-DALLEXTRAS=ON" python -m pip install . -vv
 fi
