@@ -10,6 +10,7 @@ source:
   sha256: 6d0ade3adc6296a4723053078b5db3378a2075ece720555f7288d9278be9336e
   patches:
     - 0000-win_2022.patch
+    - cmake_cuda.patch
 build:
   number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
@@ -46,7 +47,7 @@ requirements:
     - pandas
     - dcmtk
     - fmjpeg2koj
-    - libarrow
+    - libarrow-all
     - m2-patch  # [win]
     - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev  # [(cuda_compiler_version or "").startswith("12")]

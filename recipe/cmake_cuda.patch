@@ -1,0 +1,28 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 61e1118..21fd720 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -315,7 +315,7 @@ if(USE_DCMTK)
+ endif()
+ 
+ if(USEGPU)
+-	set(CUDA_SEPARABLE_COMPILATION TRUE) #-- required by DP --
++	set(CUDA_SEPARABLE_COMPILATION TRUE)
+ 
+ 	include_directories("${CUDAToolkit_INCLUDE_DIRS}")
+ 	set(GPU_SOURCE_FILES
+@@ -336,11 +336,12 @@ if(USEGPU)
+ 
+ 	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+ 		set(CUDA_VERBOSE_BUILD ON)
+-		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true -lcudadevrt>) #--required by DP--
++		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true>)
+ 	endif()
++
+ 	list(APPEND Nyxus_LIBRARIES nyxus_gpu)
+ 	list(APPEND Nyxus_LIBRARIES CUDA::cufft)
+-	#--we already link versus cudart_static-- list(APPEND Nyxus_LIBRARIES CUDA::cudart)
++	list(APPEND Nyxus_LIBRARIES CUDA::cudadevrt)
+ 
+ 	if(BUILD_LIB)
+ 		set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST} CUDA_RESOLVE_DEVICE_SYMBOLS ON)
