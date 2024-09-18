@@ -16,13 +16,13 @@ index 61e1118..21fd720 100644
  	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
  		set(CUDA_VERBOSE_BUILD ON)
 -		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true -lcudadevrt>) #--required by DP--
-+		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true>)
++		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true -lcudadevrt>)
  	endif()
 +
  	list(APPEND Nyxus_LIBRARIES nyxus_gpu)
  	list(APPEND Nyxus_LIBRARIES CUDA::cufft)
 -	#--we already link versus cudart_static-- list(APPEND Nyxus_LIBRARIES CUDA::cudart)
-+	list(APPEND Nyxus_LIBRARIES CUDA::cudadevrt)
++	list(APPEND Nyxus_LIBRARIES cudadevrt)
  
  	if(BUILD_LIB)
  		set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST} CUDA_RESOLVE_DEVICE_SYMBOLS ON)
