@@ -1,0 +1,31 @@
+From 5e0cae3fca8fde131e443130d5ef65c001bd4d8a Mon Sep 17 00:00:00 2001
+From: Andriy <andre.ixar@gmail.com>
+Date: Thu, 3 Oct 2024 07:56:01 -0400
+Subject: [PATCH] fixed missing fatbinData by temporarily disabling DP
+
+---
+ CMakeLists.txt | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9004b42..0eeb99f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -336,12 +336,11 @@ if(USEGPU)
+ 	add_library(nyxus_gpu ${GPU_SOURCE_FILES})
+ 
+ 	if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+-		set(CUDA_VERBOSE_BUILD ON)
+-		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC -rdc=true -lcudadevrt>) #--required by DP--
++		target_compile_options(nyxus_gpu PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-fPIC>)
+ 	endif()
+ 	list(APPEND Nyxus_LIBRARIES nyxus_gpu)
+ 	list(APPEND Nyxus_LIBRARIES CUDA::cufft)
+-	#--we already link versus cudart_static-- list(APPEND Nyxus_LIBRARIES CUDA::cudart)
++	list(APPEND Nyxus_LIBRARIES CUDA::cudart)
+ 
+ 	if(BUILD_LIB)
+ 		set_target_properties(backend PROPERTIES CUDA_ARCHITECTURES ${CUDA_ARCH_LIST} CUDA_RESOLVE_DEVICE_SYMBOLS ON)
+-- 
+2.39.2
+
