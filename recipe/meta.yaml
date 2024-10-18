@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 6d0ade3adc6296a4723053078b5db3378a2075ece720555f7288d9278be9336e
+  sha256: aa08beaa6bbb8bbb2d9d2ed30f0b28f516d118977fc41f3858a9ac65716808dd
   patches:
     - 0000-win_2022.patch
-    - cmake_cuda.patch
+    - 0001-cmake_CUDA.patch
 build:
   number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
