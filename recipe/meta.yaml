@@ -12,7 +12,7 @@ source:
     - 0000-win_2022.patch
     - 0001-cmake_CUDA.patch
 build:
-  number: 1
+  number: 2
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
