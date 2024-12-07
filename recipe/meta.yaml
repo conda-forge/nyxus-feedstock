@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: aa08beaa6bbb8bbb2d9d2ed30f0b28f516d118977fc41f3858a9ac65716808dd
+  sha256: 2113c467ec8550b24a5f923d7fdfd914f3cb88c1f2e1b1c6a3898e4be9779182
   patches:
     - 0000-win_2022.patch
     - 0001-cmake_CUDA.patch
 build:
-  number: 2
+  number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
