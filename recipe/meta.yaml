@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 2113c467ec8550b24a5f923d7fdfd914f3cb88c1f2e1b1c6a3898e4be9779182
+  sha256: 668b9b8c082f0270f3bffb886a4a69799b57780659b4f2c0248769a955c66dca
   patches:
     - 0000-win_2022.patch
 build:
