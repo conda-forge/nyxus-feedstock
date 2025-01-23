@@ -13,7 +13,7 @@ cuda_compiler_version:
 cxx_compiler:
 - vs2019
 libarrow:
-- '18.0'
+- '18.1'
 libboost_headers:
 - '1.86'
 libtiff:
