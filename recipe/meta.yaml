@@ -40,7 +40,8 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor
+    # 0.26 moved include/xtensor/xarray.hpp -> include/xtensor/containers/xarray.hpp
+    - xtensor <0.26
     - xsimd
     - numpy
     - pandas
