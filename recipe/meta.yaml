@@ -11,7 +11,7 @@ source:
   patches:
     - 0000-win_2022.patch
 build:
-  number: 1
+  number: 2
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -40,7 +40,8 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor
+    # 0.26 moved include/xtensor/xarray.hpp -> include/xtensor/containers/xarray.hpp
+    - xtensor <0.26
     - xsimd
     - numpy
     - pandas
