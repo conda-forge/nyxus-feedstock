@@ -41,787 +41,787 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>osx_64_libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>osx_64_libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>osx_64_libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>osx_64_libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>osx_64_libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>osx_64_libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>osx_64_libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>osx_64_libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>osx_64_libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>osx_64_libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>osx_64_libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>osx_64_libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>osx_64_libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>osx_64_libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>osx_64_libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>osx_64_libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.8libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version11.8libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version11.8libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version12.6libarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_version12.6libarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_version12.6libarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow17.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow17.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow17.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow17.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow17.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow17.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow17.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow17.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow17.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow18.1numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow18.1python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow18.1numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow18.1python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow18.1numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow18.1python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow18.1numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow18.1python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow18.1python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow19.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow19.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow19.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow19.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow19.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow19.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow19.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow19.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow19.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow20.0numpy1.22python3.10.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow20.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0numpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow20.0numpy1.22python3.9.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow20.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0numpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow20.0numpy1.23python3.11.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow20.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0numpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonelibarrow20.0numpy1.26python3.12.____cpython</td>
+              <td>win_64_cuda_compiler_versionNonelibarrow20.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17790&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0numpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nyxus-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cuda_compiler_versionNonelibarrow20.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
