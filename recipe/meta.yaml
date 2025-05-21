@@ -13,7 +13,7 @@ source:
     - 0001-xtensor.patch
     - 0002-xtensor.patch
 build:
-  number: 3
+  number: 4
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
