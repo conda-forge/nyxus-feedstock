@@ -1,0 +1,25 @@
+From 228cd86c6d2f5d9058e60d04fabc77343c7fa690 Mon Sep 17 00:00:00 2001
+From: Sameeul Bashir Samee <sameeul@gmail.com>
+Date: Wed, 21 May 2025 09:38:05 -0400
+Subject: [PATCH] chore: Update xtensor stack (#275)
+
+---
+ src/nyx/omezarr.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/nyx/omezarr.h b/src/nyx/omezarr.h
+index ac87a16..5c02f73 100644
+--- a/src/nyx/omezarr.h
++++ b/src/nyx/omezarr.h
+@@ -5,7 +5,7 @@
+ #include <algorithm>
+ #include "abs_tile_loader.h"
+ #include "nlohmann/json.hpp"
+-#include "xtensor/xarray.hpp"
++#include "xtensor/containers/xarray.hpp"
+ 
+ // factory functions to create files, groups and datasets
+ #include "z5/factory.hxx"
+-- 
+2.39.5
+

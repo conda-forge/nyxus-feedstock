@@ -8,20 +8,20 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.10.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.10.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.10.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
       linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow17.0numpy2python3.13.____cp313:
@@ -32,16 +32,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
       linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow18.1numpy2python3.13.____cp313:
@@ -52,16 +52,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
       linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow19.0numpy2python3.13.____cp313:
@@ -72,16 +72,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
       linux_64_c_compiler_version11cuda_compiler_version11.8cxx_compiler_version11libarrow20.0numpy2python3.13.____cp313:
@@ -92,16 +92,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow17.0numpy2python3.13.____cp313:
@@ -112,16 +112,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow18.1numpy2python3.13.____cp313:
@@ -132,16 +132,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow19.0numpy2python3.13.____cp313:
@@ -152,16 +152,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13libarrow20.0numpy2python3.13.____cp313:
@@ -172,16 +172,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow17.0numpy2python3.13.____cp313:
@@ -192,16 +192,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow18.1numpy2python3.13.____cp313:
@@ -212,16 +212,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow19.0numpy2python3.13.____cp313:
@@ -232,16 +232,16 @@ jobs:
         CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.22python3.9.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.11.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.23python3.11.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.12.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython:
-        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy1.26python3.12.____cpython
+      linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.9.____cpython:
+        CONFIG: linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_c_compiler_version13cuda_compiler_versionNonecxx_compiler_version13libarrow20.0numpy2python3.13.____cp313:

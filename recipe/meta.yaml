@@ -10,6 +10,8 @@ source:
   sha256: 668b9b8c082f0270f3bffb886a4a69799b57780659b4f2c0248769a955c66dca
   patches:
     - 0000-win_2022.patch
+    - 0001-xtensor.patch
+    - 0002-xtensor.patch
 build:
   number: 3
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
@@ -40,8 +42,7 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    # 0.26 moved include/xtensor/xarray.hpp -> include/xtensor/containers/xarray.hpp
-    - xtensor <0.26
+    - xtensor
     - xsimd
     - numpy
     - pandas
