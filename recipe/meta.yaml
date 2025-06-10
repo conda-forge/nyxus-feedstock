@@ -10,8 +10,6 @@ source:
   sha256: ecc7561546dee50cb30ba60d9e8eb26afef72efc606a1fcabacf39f797345d77
   patches:
     - 0000-win_2022.patch
-    - 0001-xtensor.patch
-    - 0002-xtensor.patch
 build:
   number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
