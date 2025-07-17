@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ecc7561546dee50cb30ba60d9e8eb26afef72efc606a1fcabacf39f797345d77
+  sha256: 83d3e2da8661d80403c4210e375f951c05468163f26c86e3ff79baa3e3f96eab
   patches:
     - 0000-win_2022.patch
 build:
