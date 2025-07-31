@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 83d3e2da8661d80403c4210e375f951c05468163f26c86e3ff79baa3e3f96eab
+  sha256: e5a9b234f57d3c8353702403eee230310374dc86c18f7c0bb109ceaf679f626a
   patches:
     - 0000-win_2022.patch
 build:
@@ -40,8 +40,8 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor
-    - xsimd
+    - xtensor>=0.26,<0.27
+    - xsimd>=13,<14
     - numpy
     - pandas
     - dcmtk
