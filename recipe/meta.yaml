@@ -40,8 +40,8 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor>=0.26,<0.27
-    - xsimd>=13,<14
+    - xtensor >=0.26,<0.27
+    - xsimd >=13,<14
     - numpy
     - pandas
     - dcmtk
