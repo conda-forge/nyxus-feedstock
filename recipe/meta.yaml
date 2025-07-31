@@ -10,6 +10,7 @@ source:
   sha256: c330fc42f6d47d3da55797dce6d0ee954ad421fa3d08e33787a46fe80824a516
   patches:
     - 0000-win_2022.patch
+    - 0001-dcmtk.patch
 build:
   number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]

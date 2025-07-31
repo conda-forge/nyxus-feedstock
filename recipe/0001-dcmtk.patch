@@ -1,0 +1,24 @@
+diff --git a/src/nyx/nyxus_dicom_loader.h b/src/nyx/nyxus_dicom_loader.h
+index d033ea4..a417331 100644
+--- a/src/nyx/nyxus_dicom_loader.h
++++ b/src/nyx/nyxus_dicom_loader.h
+@@ -1,7 +1,6 @@
+ #ifdef DICOM_SUPPORT
+ #pragma once
+ #include "abs_tile_loader.h"
+-#include "dcmtk/dcmdata/dctk.h"
+ #include "dcmtk/dcmjpeg/djdecode.h"  /* for JPEG decoders */
+ #include "dcmtk/dcmjpls/djdecode.h"  /* for JPEG-LS decoders */
+ #include "dcmtk/dcmdata/dcrledrg.h"  /* for RLE decoder */
+diff --git a/src/nyx/raw_dicom.h b/src/nyx/raw_dicom.h
+index 5811b68..9d8e683 100644
+--- a/src/nyx/raw_dicom.h
++++ b/src/nyx/raw_dicom.h
+@@ -1,7 +1,6 @@
+ #pragma once
+ 
+ #ifdef DICOM_SUPPORT
+-#include "dcmtk/dcmdata/dctk.h"
+ #include "dcmtk/dcmjpeg/djdecode.h"  /* for JPEG decoders */
+ #include "dcmtk/dcmjpls/djdecode.h"  /* for JPEG-LS decoders */
+ #include "dcmtk/dcmdata/dcrledrg.h"  /* for RLE decoder */
