@@ -1,5 +1,5 @@
 {% set name = "nyxus" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,10 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ecc7561546dee50cb30ba60d9e8eb26afef72efc606a1fcabacf39f797345d77
+  sha256: c330fc42f6d47d3da55797dce6d0ee954ad421fa3d08e33787a46fe80824a516
   patches:
     - 0000-win_2022.patch
+    - 0001-dcmtk.patch
 build:
   number: 1
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
@@ -40,8 +41,8 @@ requirements:
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor
-    - xsimd
+    - xtensor >=0.26,<0.27
+    - xsimd >=13,<14
     - numpy
     - pandas
     - dcmtk
