@@ -23,7 +23,7 @@ cxx_compiler_version:
 libarrow:
 - '18.1'
 libboost_headers:
-- '1.86'
+- '1.88'
 libtiff:
 - '4.7'
 macos_machine:
