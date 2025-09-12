@@ -56,7 +56,7 @@ jobs:
       osx_64_libarrow21.0python3.13.____cp313:
         CONFIG: osx_64_libarrow21.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 10
+    maxParallel: 7
   timeoutInMinutes: 360
   variables: {}
 
