@@ -21,7 +21,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 libarrow:
-- '19.0'
+- '23.0'
 libboost_headers:
 - '1.88'
 libtiff:
@@ -35,7 +35,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.11.* *_cpython
+- 3.13.* *_cp313
 target_platform:
 - osx-64
 zip_keys:
