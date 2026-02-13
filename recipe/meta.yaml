@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 50839a8be450251c67862cb1f883efd910f70a4505c2badc8f985fb3818fd59d
+  sha256: 8a6f8b76c831e697e7f54719320c19f6e44580c2caa3227e02ae803cc232d012
   patches:
     - 0000-win_2022.patch
 build:
-  number: 1
+  number: 2
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
