@@ -8,126 +8,166 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_cuda_compiler_version12.9libarrow20.0python3.10.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9libarrow20.0python3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9libarrow20.0python3.11.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9libarrow20.0python3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9libarrow20.0python3.12.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9libarrow20.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9libarrow20.0python3.13.____cp313:
-        CONFIG: win_64_cuda_compiler_version12.9libarrow20.0python3.13.____cp313
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9libarrow20.0python3.14.____cp314:
-        CONFIG: win_64_cuda_compiler_version12.9libarrow20.0python3.14.____cp314
-        UPLOAD_PACKAGES: 'True'
       win_64_cuda_compiler_version12.9libarrow21.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow21.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow21.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow21.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow21.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow21.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow21.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_version12.9libarrow21.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow21.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_version12.9libarrow21.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow22.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow22.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow22.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow22.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow22.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow22.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow22.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_version12.9libarrow22.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow22.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_version12.9libarrow22.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow23.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow23.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow23.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow23.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow23.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_version12.9libarrow23.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow23.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_version12.9libarrow23.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_version12.9libarrow23.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_version12.9libarrow23.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonelibarrow20.0python3.10.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonelibarrow20.0python3.10.____cpython
+        store_build_artifacts: false
+      win_64_cuda_compiler_version12.9libarrow24.0python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.9libarrow24.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonelibarrow20.0python3.11.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonelibarrow20.0python3.11.____cpython
+        store_build_artifacts: false
+      win_64_cuda_compiler_version12.9libarrow24.0python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.9libarrow24.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonelibarrow20.0python3.12.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonelibarrow20.0python3.12.____cpython
+        store_build_artifacts: false
+      win_64_cuda_compiler_version12.9libarrow24.0python3.12.____cpython:
+        CONFIG: win_64_cuda_compiler_version12.9libarrow24.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonelibarrow20.0python3.13.____cp313:
-        CONFIG: win_64_cuda_compiler_versionNonelibarrow20.0python3.13.____cp313
+        store_build_artifacts: false
+      win_64_cuda_compiler_version12.9libarrow24.0python3.13.____cp313:
+        CONFIG: win_64_cuda_compiler_version12.9libarrow24.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonelibarrow20.0python3.14.____cp314:
-        CONFIG: win_64_cuda_compiler_versionNonelibarrow20.0python3.14.____cp314
+        store_build_artifacts: false
+      win_64_cuda_compiler_version12.9libarrow24.0python3.14.____cp314:
+        CONFIG: win_64_cuda_compiler_version12.9libarrow24.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow21.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow21.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow21.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow21.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow21.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow21.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow21.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow21.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow21.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow21.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow22.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow22.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow22.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow22.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow22.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow22.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow22.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow22.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow22.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow22.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow23.0python3.10.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow23.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow23.0python3.11.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow23.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow23.0python3.12.____cpython:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow23.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow23.0python3.13.____cp313:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow23.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
       win_64_cuda_compiler_versionNonelibarrow23.0python3.14.____cp314:
         CONFIG: win_64_cuda_compiler_versionNonelibarrow23.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
+      win_64_cuda_compiler_versionNonelibarrow24.0python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonelibarrow24.0python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
+      win_64_cuda_compiler_versionNonelibarrow24.0python3.11.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonelibarrow24.0python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
+      win_64_cuda_compiler_versionNonelibarrow24.0python3.12.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonelibarrow24.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
+      win_64_cuda_compiler_versionNonelibarrow24.0python3.13.____cp313:
+        CONFIG: win_64_cuda_compiler_versionNonelibarrow24.0python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
+      win_64_cuda_compiler_versionNonelibarrow24.0python3.14.____cp314:
+        CONFIG: win_64_cuda_compiler_versionNonelibarrow24.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        store_build_artifacts: false
     maxParallel: 33
   timeoutInMinutes: 360
   variables:
