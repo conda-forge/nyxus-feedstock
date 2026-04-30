@@ -28,6 +28,11 @@ jobs:
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         store_build_artifacts: false
+      osx_64_libarrow21.0python3.14.____cp314:
+        CONFIG: osx_64_libarrow21.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libarrow22.0python3.10.____cpython:
         CONFIG: osx_64_libarrow22.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -45,6 +50,11 @@ jobs:
         store_build_artifacts: false
       osx_64_libarrow22.0python3.13.____cp313:
         CONFIG: osx_64_libarrow22.0python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
+      osx_64_libarrow22.0python3.14.____cp314:
+        CONFIG: osx_64_libarrow22.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         store_build_artifacts: false
@@ -68,6 +78,11 @@ jobs:
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         store_build_artifacts: false
+      osx_64_libarrow23.0python3.14.____cp314:
+        CONFIG: osx_64_libarrow23.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libarrow24.0python3.10.____cpython:
         CONFIG: osx_64_libarrow24.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -88,6 +103,12 @@ jobs:
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         store_build_artifacts: false
+      osx_64_libarrow24.0python3.14.____cp314:
+        CONFIG: osx_64_libarrow24.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
+    maxParallel: 17
   timeoutInMinutes: 360
   variables: {}
 
