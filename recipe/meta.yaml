@@ -34,7 +34,7 @@ requirements:
     - python
     - setuptools
     - pip
-    - z5py
+    - z5py <3  # 3.x drops z5/multiarray/xtensor_access.hxx
     - libtiff
     - libboost-headers
     - nlohmann_json
