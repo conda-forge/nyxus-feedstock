@@ -49,8 +49,8 @@ requirements:
     - libarrow
     - libparquet
     - m2-patch  # [win]
-    - cuda-cudart-dev  # [cuda_compiler_version != "None"]
-    - libcufft-dev  # [cuda_compiler_version != "None"]
+    - cuda-cudart-dev  # [(cuda_compiler_version or "").startswith(("12", "13"))]
+    - libcufft-dev  # [(cuda_compiler_version or "").startswith(("12", "13"))]
     - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
 
   run:
