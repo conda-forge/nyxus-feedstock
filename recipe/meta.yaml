@@ -13,7 +13,7 @@ source:
     - 0001-cuda13-arch.patch
     - 0002-cufft-enums.patch
 build:
-  number: 5
+  number: 6
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
