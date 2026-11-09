@@ -1,11 +1,11 @@
 diff --git a/setup.py b/setup.py
-index 4cb904b..2a9d48a 100644
+index e697aac..ae3e87e 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -56,12 +56,12 @@ class CMakeBuild(build_ext):
+@@ -44,12 +44,12 @@ class CMakeBuild(build_ext):
+         build_args = ["--config", cfg]
  
          if platform.system() == "Windows":
-             print("-----------------Windows...")
 -            cmake_args += [
 -                "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY_{}={}".format(cfg.upper(), extdir)
 -            ]
