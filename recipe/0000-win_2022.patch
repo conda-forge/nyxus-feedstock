@@ -1,8 +1,8 @@
 diff --git a/setup.py b/setup.py
-index e697aac..ae3e87e 100644
+index e697aac..41c9bb9 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -44,12 +44,12 @@ class CMakeBuild(build_ext):
+@@ -44,12 +44,13 @@ class CMakeBuild(build_ext):
          build_args = ["--config", cfg]
  
          if platform.system() == "Windows":
@@ -18,6 +18,7 @@ index e697aac..ae3e87e 100644
 +            # if sys.maxsize > 2 ** 32:
 +            #     cmake_args += ["-A", "x64"]
 +            # build_args += ["--", "/m"]
++            pass
          else:
              cmake_args += ["-DCMAKE_BUILD_TYPE=" + cfg]
              build_args += ["--", "-j2"]
