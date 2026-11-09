@@ -6,6 +6,8 @@ REM add -DUSEGPU=ON if nvcc is present
 where nvcc > nul 2>&1
 if %errorlevel% == 0 (
     set CMAKE_ARGS=-DALLEXTRAS=ON -DUSEGPU=ON
+    REM CCCL in CUDA 13 requires the conforming MSVC preprocessor
+    set "CUDAFLAGS=-Xcompiler /Zc:preprocessor"
 ) else (
     set CMAKE_ARGS=-DALLEXTRAS=ON
 )
