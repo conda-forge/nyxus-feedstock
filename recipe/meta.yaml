@@ -1,19 +1,17 @@
 {% set name = "nyxus" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8a6f8b76c831e697e7f54719320c19f6e44580c2caa3227e02ae803cc232d012
+  url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 170c5cb09a6c196e207f8ec364296f957f4259bc98abee452a2a0d43ac749265
   patches:
     - 0000-win_2022.patch
-    - 0001-cuda13-arch.patch
-    - 0002-cufft-enums.patch
 build:
-  number: 6
+  number: 0
   skip: true  # [py<38 or cuda_compiler_version == "11.2"]
   missing_dso_whitelist:
     - '*/nvcuda.dll'   # [win]
@@ -36,14 +34,12 @@ requirements:
     - python
     - setuptools
     - pip
-    - z5py <3  # 3.x drops z5/multiarray/xtensor_access.hxx
+    - z5py >=3.0.1
     - libtiff
     - libboost-headers
     - nlohmann_json
     - blosc
     - pybind11
-    - xtensor >=0.26,<0.27
-    - xsimd >=13,<14
     - numpy
     - pandas
     - dcmtk
